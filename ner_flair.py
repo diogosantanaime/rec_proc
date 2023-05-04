@@ -53,7 +53,7 @@ trainer.train('resources/taggers/example-ner',
               learning_rate = 0.1,
               mini_batch_size = 32,
               optimizer=SGDW,
-              max_epochs=150)
+              max_epochs=100)
 
 from flair.data import Sentence
 from flair.models import SequenceTagger
