@@ -114,7 +114,6 @@ for sentence in train_data:
     train_dataset += sentence + ['\n']
 
 with open('/content/drive/MyDrive/dataset/train.conll', 'w') as f:
-    #f.writelines(train_dataset)
     for token in train_dataset:
       if token != '\n':
         f.write(token + '\n')
@@ -127,7 +126,6 @@ for sentence in test_data:
     test_dataset += sentence + ['\n']
 
 with open('/content/drive/MyDrive/dataset/test.conll', 'w') as f:
-    #f.writelines(test_dataset)
     for token in test_dataset:
       if token != '\n':
         f.write(token + '\n')
