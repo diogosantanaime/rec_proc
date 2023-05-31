@@ -30,7 +30,7 @@ corpus = ColumnCorpus(data_folder, columns,
 tag_type = 'ner'
 
 # Cria um dicionário de tags usando o corpus combinado
-tag_dictionary = corpus.make_tag_dictionary(tag_type=tag_type)
+tag_dictionary = corpus.make_label_dictionary(label_type=tag_type)
 
 # Define os tipos de embeddings desejados
 embedding_types: List[TokenEmbeddings] = [
